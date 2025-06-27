@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+
+      if (l.hostname !== 'www.oomfie.me') {
+        l.replace(
+          l.protocol + '//www.oomfie.me' + l.pathname + l.search + l.hash
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
